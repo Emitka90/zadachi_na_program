@@ -1,0 +1,9 @@
+num = int(input())
+str_1 = []
+for i in range(num + 1):
+    str_1.append(i)
+str_1[0] = ' '
+print(*str_1)
+for i in range(1, num + 1):
+    spis = [i * j for j in range(1, num + 1)]
+    print(i, *spis)
