@@ -1,0 +1,13 @@
+def find_delitel(mas):
+    ob_dels = []
+    for i in range(2, max(mas) + 1):
+        total = 0
+        for j in mas:
+            if j % i == 0:
+                total += 1
+        if total == len(mas):
+            ob_dels.append(i)
+    return ob_dels
+
+mas = [int(i) for i in input('Введите числа, разделяя их пробелом:').split(' ')]    
+print(find_delitel(mas))
