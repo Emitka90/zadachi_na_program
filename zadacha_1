@@ -1,0 +1,10 @@
+def komp_sklon(num):
+    if num[-1] in '234':
+        return f'{num} компьютера'
+    elif num[-1] == '1':
+        return f'{num} компьютер'
+    else:
+        return f'{num} компьютеров'
+
+cislo = input('Введите число:')
+print(komp_sklon(cislo))
