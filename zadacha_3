@@ -1,0 +1,16 @@
+def pros_cis(num_1, num_2):
+    mas = []
+    for i in range(num_1, num_2 + 1):
+        total = 0
+        if i in (2, 3, 5, 7):
+            total += 1
+        for j in range(2, 10):
+            if i % j != 0:
+                total += 1
+        if total == len(range(2, 10)):
+            mas.append(i)
+    return(mas)
+
+num_1 = int(input())
+num_2 = int(input())
+print(pros_cis(num_1, num_2))
